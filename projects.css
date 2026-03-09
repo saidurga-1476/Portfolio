@@ -1,0 +1,63 @@
+/* NAVIGATION */
+nav{
+position:absolute;
+top:25px;
+right:50px;
+}
+.nav-link{
+text-decoration:none;
+font-size:18px;
+color:#e2e8f0;
+margin-left:25px;
+position:relative;
+}
+body{
+    margin:0;
+    background:skyblue;
+}
+
+#projects{
+    padding:80px 10%;
+    background:skyblue;
+}
+
+.project-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.project-container{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.project-image img{
+    width:350px;
+    border-radius:20px;
+    transform:rotate(-3deg);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+    transition:0.4s;
+}
+
+.project-image img:hover{
+    transform:rotate(0deg) scale(1.05);
+}
+
+.project-text{
+    max-width:500px;
+}
+
+.project-text h2{
+    color:black;
+}
+
+.project-text h3{
+    font-size:26px;
+}
+
+.project-text p{
+    color:black;
+    line-height:1.6;
+}

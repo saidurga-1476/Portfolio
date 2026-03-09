@@ -1,0 +1,69 @@
+/* NAVIGATION */
+nav{
+position:absolute;
+top:25px;
+right:50px;
+}
+.nav-link{
+text-decoration:none;
+font-size:18px;
+color:#e2e8f0;
+margin-left:25px;
+position:relative;
+}
+body{
+margin:0;
+font-family:Arial;
+background:black;
+}
+
+.certifications{
+padding:70px 10%;
+text-align:center;
+}
+
+.certifications h1{
+font-size:40px;
+margin-bottom:50px;
+color:lightseagreen;
+}
+
+.cert-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.cert-card{
+position:relative;
+overflow:hidden;
+border-radius:15px;
+box-shadow:0 8px 25px rgba(0,0,0,0.15);
+transition:0.4s;
+}
+
+.cert-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+display:block;
+}
+
+.cert-info{
+position:absolute;
+bottom:0;
+width:100%;
+background:rgba(0,0,0,0.6);
+color:white;
+padding:15px;
+transform:translateY(100%);
+transition:0.4s;
+}
+
+.cert-card:hover .cert-info{
+transform:translateY(0);
+}
+
+.cert-card:hover{
+transform:translateY(-10px) scale(1.03);
+}

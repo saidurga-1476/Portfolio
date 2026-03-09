@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Life Journey</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+margin:0;
+font-family:Segoe UI;
+background:black;
+color:white;
+}
+/* NAVIGATION */
+nav{
+position:absolute;
+top:25px;
+right:50px;
+}
+.nav-link{
+text-decoration:none;
+font-size:18px;
+color:#e2e8f0;
+margin-left:25px;
+position:relative;
+}
+/* Animated underline */
+.nav-link::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-5px;
+width:0%;
+height:2px;
+background:#38bdf8; 
+transition:0.4s;
+}
+.nav-link:hover::after{
+width:100%;
+}
+/* TITLE */
+.title{
+text-align:center;
+margin-top:80px;
+font-size:40px;
+}
+.title span{
+color:skyblue;
+}
+/* EVENT */
+.event{
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:80px;
+position:relative;
+}
+/* TEXT BOX */
+.text-box{
+width:40%;
+background:rgb(137, 194, 222);
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
+}
+.text-box h3{
+margin-top:0;
+color:black;
+}
+.image-box {
+  width: 20%; /* medium size container */
+  margin: 10px; /* optional spacing */
+}
+.image-box img {
+  width: 100%;      /* image fills container width */
+  height: auto;     /* keeps aspect ratio, avoids stretching */
+  max-height: 200px; /* limits height */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  display: block;
+  object-fit: cover; /* crops if needed to look good */
+}
+/* FAMILY LAYOUT */
+.family .image-box{
+order:3;
+}
+.family .text-box{
+order:2;
+}
+/* CHILDHOOD LAYOUT */
+.childhood .text-box{
+order:1;
+}
+.childhood .image-box{
+order:2;
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<a href="index.html" class="nav-link">Home</a>
+<a href="sabout.html" class="nav-link">About</a>
+<a href="acamedics.html" class="nav-link">Academics</a>
+<a href="skills.html" class="nav-link">Skills</a>
+<a href="certifications.html" class="nav-link">Certifications</a>
+<a href="projects.html" class="nav-link">Projects</a>
+<a href="contact.html" class="nav-link">Contact</a>
+</nav>
+</header>
+<h1 class="title">Moments of<span> My Life</span></h1>
+<div class="timeline">
+<!-- FAMILY (IMAGE LEFT) -->
+<div class="event family">
+<div class="image-box">
+<img src="images\family.jpg.jpeg">
+</div>
+<div class="text-box">
+<h3>Family</h3>
+<p>
+Family moments bring love, care and happiness. 
+These memories create strong emotional bonds 
+and support throughout life.
+</p>
+</div>
+</div>
+<!-- CHILDHOOD (IMAGE RIGHT) -->
+<div class="event childhood">
+    <div class="image-box">
+<img src="images\sai childhood.jpeg">
+</div>
+
+<div class="text-box">
+<h3>Childhood</h3>
+<p>
+Childhood is filled with curiosity, laughter 
+and joyful memories. Every small moment 
+becomes a beautiful story of growing up.
+</p>
+</div>
+    </div>
+</body>
+</html>

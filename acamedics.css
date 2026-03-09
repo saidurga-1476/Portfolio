@@ -1,0 +1,77 @@
+body{
+font-family: 'Montserrat', sans-serif;
+background:black;
+color:white;
+margin:0;
+}
+/* NAVIGATION */
+nav{
+position:absolute;
+top:25px;
+right:50px;
+}
+.nav-link{
+text-decoration:none;
+font-size:18px;
+color:#e2e8f0;
+margin-left:25px;
+position:relative;
+}
+/* Animated underline */
+.nav-link::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-5px;
+width:0%;
+height:2px;
+background:#38bdf8;
+transition:0.4s;
+}
+.nav-link:hover::after{
+width:100%;
+}
+/* PAGE TITLE */
+.page-title{
+text-align:center;
+padding:70px 20px;
+}
+.page-title h1{
+font-size:40px;
+color:#38bdf8;
+}
+.page-title p{
+max-width:600px;
+margin:auto;
+line-height:1.7;
+color:#cbd5f5;
+}
+/* ACADEMIC CARD */
+.academic-section{
+display:flex;
+justify-content:center;
+padding:10px;
+}
+.academic-card{
+background-color:lightseagreen;
+padding:20px;
+border-radius:15px;
+max-width:700px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+.academic-card h2{
+margin-bottom:20px;
+color:white;
+}
+/* LIST */
+.academic-list{
+list-style:none;
+padding:0;
+}
+.academic-list li{
+margin-bottom:18px;
+line-height:1.7;
+}
+.icon{
+margin-right:10px;
+}
